@@ -28,7 +28,7 @@ hr
     width: 870px;
     /* display: flex;
     flex-direction: column; */
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding: 30px;
     background-color: #ffffff;
@@ -103,4 +103,72 @@ hr
     font-weight: 400;
     font-size: 16px;
     color: #562EFF;
+}
+/* styles for courses section */
+.courses
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+.course
+{
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.05);
+}
+.course img
+{
+    width: 224px;
+    margin-bottom: 20px;
+}
+.course-info h1
+{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+.course-info > p
+{
+    font-weight: 400;
+    font-size: 15px;
+    color: #ED6B4F;
+}
+.course-details
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.course-details .stars, .time
+{
+    display: flex;
+    align-items: center;
+}
+.stars span
+{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.stars i
+{
+    font-size: 12px;
+}
+.star-empty
+{
+    color: #AEAEAE;
+}
+.star-fill
+{
+    color: #FFC014;
+}
+.time
+{
+    width: 100px;
+    justify-content: space-around;
+    background-color: #FFE4E8;
+    padding: 5px;
+    border-radius: 15px;
+    color: #FF4A60;
 }
